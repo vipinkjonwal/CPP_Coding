@@ -2,8 +2,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
 	system("cls");
 	cout << "Size of char is " << sizeof(char) << "\n";
 	cout << "Size of signed char is " << sizeof(signed char) << "\n";
