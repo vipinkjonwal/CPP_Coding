@@ -70,6 +70,7 @@ void Converter::convertDecimalToBinary(float inputNumber){
 
 int main(int argc, char const *argv[]){
 	system("cls");
+	//Clear Screen
 	Converter object;
 	float number;
 	cout << "\t\t******* CONVERTER ********\n\n";
