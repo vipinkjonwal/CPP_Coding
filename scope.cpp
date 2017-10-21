@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int globalVariable;
+int globalVariable = 98;
 int localVariable = 25;
 
 int main(int argc, char const *argv[]){
@@ -17,6 +17,7 @@ int main(int argc, char const *argv[]){
 
 	cout << "Sum of " << variableOne << " and " << variableTwo << " is " <<globalVariable << endl;
 	cout << "Value of localVariable  is " << localVariable << endl;
+	cout << "Value of globalVariable  is " << ::globalVariable << endl;
 
 	return 0;
 }
