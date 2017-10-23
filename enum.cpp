@@ -3,13 +3,13 @@
 using namespace std;
 
 enum Company{
-	Google = 1, Facebook, Twitter, Snapdeal, Microsoft
+	Google = 1, Facebook, Twitter, Snapdeal, Microsoft					//Google is initialized with value 1. First value, unless stated, takes value as 0.
 };
 
 int main(int argc, char const *argv[]){
 	
 	int choice;
-	repeat:
+	repeat:																//repeat is a label.
 	cout << "Please enter a choice : ";
 	cin >> choice;
 	switch(choice){
@@ -28,9 +28,9 @@ int main(int argc, char const *argv[]){
 		case Microsoft: 
 				cout << "You have chosen Microsoft.";
 				break;
-		default:
-				cerr << "ERROR: Please enter a valid choice.\n";
-				goto repeat;
+		default:														//default is used when none of cases mentioned above is hitted.
+				cerr << "ERROR: Please enter a valid choice.\n";		//cerr is used to output an error message only. It works same as cout.
+				goto repeat;											//goto repeat is unconditional jump to labe repeat.
 			break;	
 	}
 
