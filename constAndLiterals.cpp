@@ -13,9 +13,10 @@ int main(int argc, char const *argv[]){
 	cout << "Perimeter of second circle is " << PI*DIAMETER;
 
 	/*
+	
 	DIAMETER = 10;
 	cout << DIAMETER;
-	//It gives an error because we can't modify a read only variable created by const keyword.
+	It gives an error because we can't modify a read only variable created by const keyword.
 
 	*/
 
