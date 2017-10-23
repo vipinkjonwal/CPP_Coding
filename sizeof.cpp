@@ -4,6 +4,8 @@ using namespace std;
 
 int main(int argc, char const *argv[]){
 	system("cls");
+	//system("cls") is used to clear screen.
+
 	cout << "Size of char is " << sizeof(char) << "\n";
 	cout << "Size of signed char is " << sizeof(signed char) << "\n";
 	cout << "Size of unsigned char is " << sizeof(unsigned char) << "\n";
