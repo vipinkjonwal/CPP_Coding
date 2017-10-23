@@ -75,14 +75,13 @@ int main(int argc, char const *argv[]){
 	float number;
 	cout << "\t\t******* CONVERTER ********\n\n";
 
-	check:
 	cout << "\tEnter the number: ";
 	cin >> number;
-	
-	if (number < 0){
+	while(number<0){
 		cerr << "\tERROR: Please enter a positive number.\n";
-		goto check;
+		cin>>number;
 	}
+	
 
 	cout<<"\tYou have entered "<<number<<"\n\n";
 	object.convertDecimalToBinary(number);
