@@ -4,6 +4,7 @@ using namespace std;
 #define PI 3.1415
 
 int main(int argc, char const *argv[]){
+//main function
 	
 	int radius;
 	const int DIAMETER = 20; 
