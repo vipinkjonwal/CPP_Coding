@@ -7,6 +7,6 @@ typedef int meter;
 
 int main(int argc, char const *argv[]){
 	meter kiloMeter=1;
-	cout << "There are 1000 meters in " << kiloMeter << " Kilometer.";
+	cout << kiloMeter << " Kilometer = 1000 metres. ";
 	return 0;
 }
