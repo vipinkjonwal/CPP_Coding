@@ -3,6 +3,7 @@
 #include <stdlib.h>
 using namespace std;
 
+//class Definition
 class Converter{
 public:
 	float number;
