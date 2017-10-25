@@ -69,8 +69,7 @@ void Converter::convertDecimalToBinary(float inputNumber){
 }
 
 int main(int argc, char const *argv[]){
-	system("cls");
-	//Clear Screen with system("cls")
+	system("cls");  //Clear Screen with system("cls")
 	Converter object;
 	float number;
 	cout << "\t\t******* CONVERTER ********\n\n";
