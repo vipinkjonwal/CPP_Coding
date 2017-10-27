@@ -2,7 +2,7 @@
 using namespace std;
 
 extern int tempVariable;
-
+//extern is used to represent external storage class.
 int main(int argc, char const *argv[]){
 	int tempVariable;
 	cout << "Enter a number : ";
