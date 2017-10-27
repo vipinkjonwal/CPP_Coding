@@ -20,7 +20,7 @@ int main(int argc, char const *argv[]){
 	}
 	cout << "Sum is " << forSum << endl << endl;
 
-	//while loop.
+	//while loop is a entry controlled loop
 	cout << "\n\tWHILE LOOP\n";
 	int myCounter = 10;
 	int whileSum = 0;
@@ -32,9 +32,10 @@ int main(int argc, char const *argv[]){
 	}
 	cout<< "Sum is "<< whileSum << endl;
 
-	//do-while loop
+	//do-while loop is a post test loop. It is always executed at least once.
 	cout << "\n\tDO-WHILE LOOP\n";
 	int doWhile = 3;
+	
 	do{
 		cout << "Value of counter is " << doWhile << endl;
 		doWhile--;
