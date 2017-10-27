@@ -11,7 +11,8 @@ int main(int argc, char const *argv[]){
 		forSum = forSum + i;
 
 		if (forSum < 25){
-			continue;
+			//continue statement
+			continue; 
 		}
 
 		else{
