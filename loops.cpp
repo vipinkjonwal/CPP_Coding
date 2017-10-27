@@ -42,6 +42,16 @@ int main(int argc, char const *argv[]){
 		doWhile--;
 	}while(doWhile!=0);
 
+	//infite loops :  execute for infinite times.
+	/*
+	for ( ; ; ){ 
+	Code here.
+	}
+	
+	while(1){
+	Code here.
+	}
+	*/
 
 	return 0;
 }
