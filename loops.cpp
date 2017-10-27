@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Loops are used to repeat a specific block of code.
 int main(int argc, char const *argv[]){
 	
 	//for loop.
