@@ -12,6 +12,7 @@ int main(int argc, char const *argv[]){
 
 		if (forSum < 25){
 			continue;
+			//continue statement is used to skip next lines and retest loop condition.
 		}
 
 		else{
