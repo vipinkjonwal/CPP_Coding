@@ -3,6 +3,7 @@ using namespace std;
 
 int globalVariable;
 int localVariable = 25;
+// Value of a global variable persists between different function calls.
 
 int main(int argc, char const *argv[]){
 
