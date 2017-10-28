@@ -23,6 +23,9 @@ int main(int argc, char const *argv[]){
 }
 
 //This is function definition.
+/*
+We can have default parameters as well. Like we can set num2 = 10 as default. Unless specified, it will take value of num2 as 10.
+*/
 int max(int num1,int num2){
 	/*
 	Objective 		: To find maximum of two numbers.
