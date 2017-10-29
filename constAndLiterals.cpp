@@ -25,8 +25,6 @@ int main(int argc, char const *argv[]){
 	It gives an error because we can't modify a read only variable created by const keyword.
 
 	*/
-
-
 	return 0;
 
 }
