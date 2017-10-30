@@ -13,7 +13,7 @@ public:
 };
 
 void Converter::convertDecimalToBinary(float inputNumber){
-		
+
 		counter = 0;
 		float numberImage = inputNumber;
 		float fractionImage = inputNumber;
@@ -56,7 +56,7 @@ void Converter::convertDecimalToBinary(float inputNumber){
 				fractionCounter++;
 			}
 		decimalPlaces--;
-		}		
+		}
 
 		cout << "\tBinary Number for " << numberImage << " is: ";
 		for (int i = counter-1; i >= 0; i--){
@@ -75,13 +75,12 @@ int main(int argc, char const *argv[]){
 	float number;
 	cout << "\t\t******* CONVERTER ********\n\n";
 
-	check:
 	cout << "\tEnter the number: ";
 	cin >> number;
-	
-	if (number < 0){
-		cerr << "\tERROR: Please enter a positive number.\n";
-		goto check;
+	while (number < 0) {
+		cerr << "\tERROR: Please enter a positive number. Enter again.\n";
+		cout<< "\tEnter the number: ";
+		cin >> number;
 	}
 
 	cout<<"\tYou have entered "<<number<<"\n\n";
