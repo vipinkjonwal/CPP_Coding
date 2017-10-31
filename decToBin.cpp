@@ -3,6 +3,7 @@
 #include <stdlib.h>
 using namespace std;
 
+//This is a class.
 class Converter{
 public:
 	float number;
@@ -12,6 +13,7 @@ public:
 	void convertDecimalToBinary(float);
 };
 
+//Definitions of functions of class Converter.
 void Converter::convertDecimalToBinary(float inputNumber){
 
 		counter = 0;
