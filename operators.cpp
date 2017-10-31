@@ -5,7 +5,9 @@ int main(int argc, char const *argv[]){
 
 	int testValue = 15;
 	cout << testValue << endl;
-	testValue >>= 2; 			//Right Shift by 2 of testVAlue which is 15, in binary 0000 1111 which outputs 0000 0011.
+	testValue >>= 2; 	/*Right Shift by 2 of testVAlue which is 15, in binary 0000 1111
+				which outputs 0000 0011 i.e floor(15/(2*2))=3.
+	
 	cout << testValue << endl;
 	testValue <<= 2; 			//Left Shift by 4 of testValue which is now 3 (0000 0011) which outputs 0011 0000 which is 12.
 	cout << testValue << endl;
