@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char const *argv[]){
-	
+int main(int argc, char const *argv[]) {
+
 	//If-Else
-	if ( 2 + 2 == 4 ){
+	if ( 2 + 2 == 4 ) {
 		cout << "Correct Evaluation.\n";
 	}
 
-	else{
+	else {
 		cout<< "Incorrect Evaluation.\n";
 	}
 
@@ -16,12 +16,12 @@ int main(int argc, char const *argv[]){
 	int myCase;
 	cout << "Please enter a number : ";
 	cin >> myCase;
-	switch(myCase){
+	switch(myCase) {
 		case 1: cout << "Case 1 Invoked.\n";
 				break;
 		case 2: cout << "Case 2 Invoked.\n";
 				break;
-		default: cerr << "ERROR: Input from 1 or 2 only.\n"; 
+		default: cerr << "ERROR: Input from 1 or 2 only.\n";
 				break;
 	}
 
