@@ -19,8 +19,10 @@ int main(int argc, char const *argv[]) {
 			cout << "Sum is " << forSum << endl << endl;
 		}
 	}
+	
 	cout << "Sum is " << forSum << endl << endl;
 
+	//While Loop
 	//while loop is a entry controlled loop
 	cout << "\n\tWHILE LOOP\n";
 	int myCounter = 10;
