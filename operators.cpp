@@ -7,7 +7,10 @@ int main(int argc, char const *argv[]){
 	cout << testValue << endl;
 	testValue >>= 2; 			//Right Shift by 2 of testVAlue which is 15, in binary 0000 1111 which outputs 0000 0011.
 	cout << testValue << endl;
-	testValue <<= 2; 			//Left Shift by 4 of testValue which is now 3 (0000 0011) which outputs 0011 0000 which is 12.
+	testValue <<= 2; 			/*Left Shift by 2 of testValue which is now 3 (0000 0011) which outputs
+						0011 0000 which is 12 i.e. 3*2*2=12 as shift is made by 2 and with one shift
+						number gets shifted by 2. */
+	
 	cout << testValue << endl;
 
 	testValue > 0 ? cout << "Yes" : cout << "No"; 			// (condition ? if true : else)  -  One liner if else.
