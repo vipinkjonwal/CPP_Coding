@@ -2,7 +2,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(int argc, char const *argv[]){
+int main(int argc, char const *argv[]) {
 	system("cls");
 	//system("cls") is used to clear screen.
 
@@ -22,6 +22,6 @@ int main(int argc, char const *argv[]){
 	cout << "Size of double is " << sizeof(double) << "\n";
 	cout << "Size of long double is " << sizeof(long double) << "\n";
 	cout << "Size of wchar_t is " << sizeof(wchar_t) << "\n";
-	
+
 	return 0;
 }
