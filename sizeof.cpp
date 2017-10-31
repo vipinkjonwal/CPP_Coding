@@ -22,6 +22,11 @@ int main(int argc, char const *argv[]) {
 	cout << "Size of double is " << sizeof(double) << "\n";
 	cout << "Size of long double is " << sizeof(long double) << "\n";
 	cout << "Size of wchar_t is " << sizeof(wchar_t) << "\n";
+	//In Addition
+	int x=95;
+	int y=sizeof(x++);
+	cout << x <<"\n";
+	//Output will be 95 as sizeof() doesn't evaluate an expression.
 
 	return 0;
 }
