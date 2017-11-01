@@ -4,7 +4,7 @@
 using namespace std;
 
 //This is a class.
-class Converter{
+class Converter {
 public:
 	float number;
 	int binaryArrayDecimal[32];
@@ -14,7 +14,7 @@ public:
 };
 
 //Definitions of functions of class Converter.
-void Converter::convertDecimalToBinary(float inputNumber){
+void Converter::convertDecimalToBinary(float inputNumber) {
 
 		counter = 0;
 		float numberImage = inputNumber;
@@ -70,7 +70,7 @@ void Converter::convertDecimalToBinary(float inputNumber){
 		}
 }
 
-int main(int argc, char const *argv[]){
+int main(int argc, char const *argv[]) {
 	system("cls");
 	//Clear Screen with system("cls")
 	Converter object;
