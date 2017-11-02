@@ -15,9 +15,7 @@ class Stack {
 };
 
 void Stack::push(int element) {
-  cout << "Enter the size of Stack: ";
-  cin >> sizeOfStack;
-
+  
   top = 0;
 
   if (top != sizeOfStack) {
