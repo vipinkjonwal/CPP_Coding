@@ -6,8 +6,12 @@ using namespace std;
 int main(int argc, char const *argv[]) {
   srand(time(NULL));
   int myRandom;
-  myRandom = rand()%10;
-  cout << "Random Number generated is: " << myRandom;
+
+  //Generate 10 random numbers.
+  for (int i = 0; i < 10; ++i) {
+    myRandom = rand()%10;
+    cout << "Random Number generated is: " << myRandom << endl;
+  }
   return 0;
 }
 
@@ -15,5 +19,5 @@ int main(int argc, char const *argv[]) {
 stdlib.h is used for rand() function.
 time.h is used for time() cuntion to fetch system time.
 srand() is used to seed the random number.
-rand()%10 will return random numbers between 1-10.
+rand()%10 will return random numbers between 0-9 (Inclusive).
 */
