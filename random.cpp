@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
+
   srand(time(NULL));
   int myRandom;
 
@@ -20,4 +21,5 @@ stdlib.h is used for rand() function.
 time.h is used for time() cuntion to fetch system time.
 srand() is used to seed the random number.
 rand()%10 will return random numbers between 0-9 (Inclusive).
+In general, rand()%k will return random numbers between 0-k.
 */
