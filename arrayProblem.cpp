@@ -14,7 +14,7 @@ int maximum(int array[]) {
 
 int main(int argc, char const *argv[]) {
   int array[20];
-  int size = 0;
+  int size;
   int answer = 0;
 
   cout << "Enter the size of array: ";
