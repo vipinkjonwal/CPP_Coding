@@ -5,3 +5,6 @@ Tutorials from TutorialsPoint/CPlusPlus
 
 ### Current Topic :
 #### Pointers
+
+### Practice Topic :
+#### Arrays
