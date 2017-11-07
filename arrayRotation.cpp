@@ -42,7 +42,7 @@ int main(int argc, char const *argv[]) {
   cin >> numberOfRotations;
   for (int i = 0; i < numberOfRotations; ++i) {
       rotated = rotateByOne(array);
-      cout << "Array after rotation " << i << endl;
+      cout << "Array after rotation " << i+1  << endl;
       display(rotated);
       cout << '\n';
   }
