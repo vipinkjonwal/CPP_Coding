@@ -7,4 +7,4 @@ Tutorials from TutorialsPoint/CPlusPlus
 #### Pointers
 
 ### Practice Topic :
-#### Arrays
+#### Arrays : Leaders in an Array
