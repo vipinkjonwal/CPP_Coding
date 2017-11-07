@@ -1,3 +1,8 @@
+/*
+Question : Write a function that rotates array[] of
+           size 'size' by 'numberOfRotations' times.
+*/
+
 #include <iostream>
 using namespace std;
 
