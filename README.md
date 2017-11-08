@@ -7,4 +7,4 @@ Tutorials from TutorialsPoint/CPlusPlus
 #### Pointers
 
 ### Practice Topic :
-#### Arrays : Leaders in an Array
+#### Arrays : Maximum sum such that no two elements are adjacent
