@@ -13,15 +13,15 @@ int maximumSum(int array[],int size) {
       oddSum = oddSum + array[i];
     }
   }
-
+/*
   if (evenSum > oddSum) {
     maxSum = evenSum;
   }
   else {
     maxSum = oddSum;
   }
-
-  return maxSum;
+*/
+  return evenSum > oddSum ? evenSum : oddSum;
 }
 
 int main(int argc, char const *argv[]) {
