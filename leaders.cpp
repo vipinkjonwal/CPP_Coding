@@ -23,8 +23,6 @@ int main(int argc, char const *argv[]) {
   for (int i = 0; i < size; ++i) {
     cin >> array[i];
   }
-
   printLeaders(array,size);
-
   return 0;
 }
