@@ -23,20 +23,19 @@ int main(int argc, char const *argv[]) {
   }
   firstSmallest = tempMin;
 
+  for (int i = 0; i < size; ++i) {
+    cout << array[i] << "  ";
+  }
 
-  int temp = firstSmallest;
-  firstSmallest = array[0];
-  array[0] = temp;
-
-
-  tempMin = array[1];
-  for (int i = 1; i < size; ++i) {
-    if (tempMin > array[i]) {
-      tempMin = array[i];
+  cout << "First smallest: " << firstSmallest;
+  secondSmallest = array[0];
+  for (int i = 0; i < size; ++i) {
+    if ((secondSmallest > array[i]) && (secondSmallest != firstSmallest)) {
+      secondSmallest = array[i];
     }
   }
-  secondSmallest = tempMin;
-  
+
+  cout << "\nFirst two smallest: ";
   cout << firstSmallest << '\t' << secondSmallest;
   return 0;
 }
