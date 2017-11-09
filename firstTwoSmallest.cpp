@@ -27,12 +27,10 @@ int main(int argc, char const *argv[]) {
     cout << array[i] << "  ";
   }
 
-  cout << "First smallest: " << firstSmallest;
-  secondSmallest = array[0];
   for (int i = 0; i < size; ++i) {
-    if ((secondSmallest > array[i]) && (secondSmallest != firstSmallest)) {
+    if ((secondSmallest > array[i]) && (array[i] != firstSmallest)) {
       secondSmallest = array[i];
-    }
+     }
   }
 
   cout << "\nFirst two smallest: ";
