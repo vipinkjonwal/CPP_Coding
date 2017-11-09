@@ -7,4 +7,4 @@ Tutorials from TutorialsPoint/CPlusPlus
 #### Pointers
 
 ### Practice Topic :
-#### Arrays : Maximum sum such that no two elements are adjacent
+#### Arrays : Find the smallest and second smallest elements in an array
