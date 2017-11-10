@@ -7,4 +7,4 @@ Tutorials from TutorialsPoint/CPlusPlus
 #### Pointers
 
 ### Practice Topic :
-#### Arrays : Find the smallest and second smallest elements in an array
+#### Arrays : Find missing element in array. (XOR Approach)
