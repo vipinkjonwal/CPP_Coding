@@ -5,9 +5,9 @@ int getOddOccurrence(int array[], int size)
 {
      int i;
      int result = 0;
-     for (i=0; i < size; ++i)
+     for (i=0; i < size; ++i) {
         result = result ^ array[i];
-
+    }
      return result;
 }
 
