@@ -21,7 +21,7 @@ int findMissing(int array[], int size) {
 int main(int argc, char const *argv[]) {
   int array[20];
   int size;
-  int missing;
+  int missingNumber;
 
   cout << "Enter the size of array: ";
   cin >> size;
@@ -31,7 +31,7 @@ int main(int argc, char const *argv[]) {
     cin >> array[i];
   }
 
-  missing = findMissing(array,size);
-  cout << "Missing number is " << missing;
+  missingNumber = findMissing(array,size);
+  cout << "Missing number is " << missingNumber;
   return 0;
 }
