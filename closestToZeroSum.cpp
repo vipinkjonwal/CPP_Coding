@@ -24,6 +24,7 @@ int main(int argc, char const *argv[]) {
   int array[20];
   int size;
   int sum;
+  
   cout << "Enter the size of array: ";
   cin >> size;
 
