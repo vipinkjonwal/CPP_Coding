@@ -3,7 +3,7 @@
 using namespace std;
 
 int zeroSum(int array[],int size) {
-  int tempSum;
+  int tempSum;0
   int returnSum = array[0]+array[1];
   for (int i = 0; i < size; ++i) {
     for (int j = i+1; j < size; ++j) {
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
   int array[20];
   int size;
   int sum;
-  
+
   cout << "Enter the size of array: ";
   cin >> size;
 
