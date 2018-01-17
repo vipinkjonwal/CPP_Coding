@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <conio.h>
 using namespace std;
 
 class Stack {
@@ -11,12 +12,10 @@ class Stack {
 
     void push(int);
     int pop();
-    void display();
+    void display(int[]);
 };
 
 void Stack::push(int element) {
-  
-  top = 0;
 
   if (top != sizeOfStack) {
     stackArray[top] = element;
@@ -42,7 +41,7 @@ int Stack::pop() {
   return tempPop;
 }
 
-void Stack::display(){
+void Stack::display(int stackArray[]){
   for (int i = 0; i < sizeOfStack; ++i) {
     cout << stackArray[i] << "  ";
   }
@@ -53,6 +52,9 @@ int main(int argc, char const *argv[]) {
   int choice;
   int element;
   Stack obj;
+  obj.top = 0;
+  cout << "Enter size of Stack: ";
+  cin >> obj.sizeOfStack;
 
   do {
     system("cls");
@@ -65,8 +67,12 @@ int main(int argc, char const *argv[]) {
       case 1: cout << "Enter the element to PUSH: ";
               cin >> element;
               obj.push(element);
+              obj.display(obj.stackArray);
+              getch();
               break;
       case 2: obj.pop();
+              obj.display(obj.stackArray);
+              getch();
               break;
       case 3: exit(0);
       default : cerr << "ERROR: Input correct input." << '\n';
