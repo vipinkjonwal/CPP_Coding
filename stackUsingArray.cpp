@@ -22,8 +22,8 @@ void Stack::push(int element) {
     top++;
   }
 
-  if (top == sizeOfStack) {
-    cout << "Stack is FULL. POP elements to enter new elements.";
+  else {
+    cout << "Stack is FULL. POP elements to enter new elements.\n";
   }
 }
 
@@ -35,15 +35,21 @@ int Stack::pop() {
   }
 
   if (top == -1) {
-    cout << "Stack is EMPTY. PUSH elements to POP.";
+    cout << "Stack is EMPTY. PUSH elements to POP.\n";
   }
 
   return tempPop;
 }
 
 void Stack::display(int stackArray[]){
-  for (int i = 0; i < sizeOfStack; ++i) {
-    cout << stackArray[i] << "  ";
+  if (top == -1) {
+    cout << "Current Stack: EMPTY";
+  }
+  else {
+    cout << "Current Stack:";
+    for (int i = 0; i < top; ++i) {
+      cout << stackArray[i] << "  ";
+    }
   }
 }
 
@@ -53,6 +59,9 @@ int main(int argc, char const *argv[]) {
   int element;
   Stack obj;
   obj.top = 0;
+  system("cls");
+  cout << "\t\t ***** STACK *****\n\n";
+
   cout << "Enter size of Stack: ";
   cin >> obj.sizeOfStack;
 
@@ -76,6 +85,7 @@ int main(int argc, char const *argv[]) {
               break;
       case 3: exit(0);
       default : cerr << "ERROR: Input correct input." << '\n';
+                getch();
                 break;
     }
   } while(choice != 3);
