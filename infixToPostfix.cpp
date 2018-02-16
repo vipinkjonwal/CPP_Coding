@@ -1,5 +1,5 @@
 /*
-Program     : Stack using Arrays
+Program     : Convert Infix expression into Postfix expression.
 Author      : © Vipin Kumar
 Created on  : February 16, 2018 14:15 IST
 */
