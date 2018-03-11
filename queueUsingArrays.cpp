@@ -12,7 +12,6 @@ using namespace std;
 
 class Queue {
 	/*
-
 	Summary
 	-------
 	Create a class to implement Queue(circular) using dynamically created array.
@@ -43,15 +42,15 @@ class Queue {
 	class.
 	*/
 
-	int *arr;					// Array to store queue elements
-	int capacity;			// Maximum capacity of the Q
-	int front;				// Front points to front element in the Q
-	int rear;					// Rear points to last element in the Q
-	int count;				// Current size of the Q
-
 public:
-	queue(int size = SIZE);			// Constructor
-	~queue();										// Destructor
+	int *queueArray;						// Array to store queue elements
+	int capacity;								// Maximum capacity of the Q
+	int front;									// Front points to front element in the Q
+	int rear;										// Rear points to last element in the Q
+	int count;									// Current size of the Q
+
+	Queue(int size = SIZE);			// Constructor
+	~Queue();										// Destructor
 	void dequeue();							// Deleting the element.
 	void enqueue(int);					// Inserting the element.
 	int peek();  								// Returns front element
@@ -59,3 +58,45 @@ public:
 	bool isEmpty();							// Check if Queue is Empty.
 	bool isFull();							// Check if Queue is Full.
 };
+
+Queue(int size = SIZE) {
+	/*
+	Summary
+	-------
+	Create a constructor for Queue class.
+
+	Extended Summary
+	----------------
+	This is a constructor definition of a Queue class. This constructor
+	initializes the class variables and alloted memory space for the
+	them. It also creates the dynamic array. A Constructor definition
+	is necessary because of it's importance in memory allotment.
+
+	Parameters
+	----------
+	size : int type, tells about the memory alloted to the array being
+	initialized.
+
+	Returns
+	-------
+	None
+
+	Description
+	-----------
+	Queue Constructor definition.
+
+	Approach
+	--------
+	Constructor definition provides information of data member when they are
+	being initialized at compile time.
+	*/
+
+	capacity = 0;
+	front = 0;
+	rear = count - 1;
+	queueArray = new int[SIZE];
+}
+
+~Queue() {
+	delete queueArray;
+}
