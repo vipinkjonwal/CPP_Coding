@@ -15,8 +15,8 @@ bool isPalindrome (string givenString) {
 	Extended Summary
 	----------------
 	Type - bool
-	This function will tells that if a given string is palindrome or not. Two data structures
-	namely STL Stack and STL Queue are used for this purpose.
+	This function will tells that if a given string is palindrome or not. Two data 
+	structures namely STL Stack and STL Queue are used for this purpose.
 
 	Parameters
 	----------
@@ -33,9 +33,9 @@ bool isPalindrome (string givenString) {
 
 	Approach
 	--------
-	The givenString is being pushed char by char into stack and queue. Then, a char is
-	popped out from stack and dequeued from queue. If they're equal, we do the same
-	until stack is empty, otherwise returns false.
+	The givenString is being pushed char by char into stack and queue. Then, 
+	a char is popped out from stack and dequeued from queue. If they're equal, 
+	we do the same until stack is empty, otherwise returns false.
 	*/
 
 	int length = givenString.length ();
@@ -103,7 +103,8 @@ int main () {
 	cout << "Enter a string: ";
 	getline (cin, givenString);
 	answer = isPalindrome (givenString);
-	answer ? cout << givenString << " is Palindrome." : cout << givenString << " is NOT Palindrome.";
+	answer ? cout << givenString << " is Palindrome." : \
+		cout << givenString << " is NOT Palindrome.";
 	getch ();
 	return 0;
 }
