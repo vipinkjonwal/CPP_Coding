@@ -13,7 +13,6 @@ Created on  : March 11, 2018 20:57 IST
 using namespace std;
 
 class Queue {
-	
 	/*
 	Summary
 	-------
@@ -182,7 +181,7 @@ bool Queue::isEmpty () {
 	--------
 	Check the value of `front` if it is -1.
 	*/
-
+	
 	if (front == -1) {
 		return true;
 	}
