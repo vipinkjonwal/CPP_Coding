@@ -97,8 +97,7 @@ Queue::Queue() {
 
 	Parameters
 	----------
-	size : int type, tells about the memory alloted to the array being
-	initialized.
+	None
 
 	Returns
 	-------
@@ -149,6 +148,7 @@ Queue::~Queue() {
 	Destructor definition provides information of data member when they are
 	being deleted at run time.
 	*/
+	
 	delete queueArray;
 }
 
