@@ -1,5 +1,5 @@
 /*
-Program     : Reverse the Linked List in Pairs.
+Program     : Reverse the Linked List in Pairs. (Q3: Assignment 1)
 Author      : © Vipin Kumar
 Created on  : March 20, 2018 11:38 IST
 */
@@ -25,6 +25,7 @@ public:
 	SinglyLinkedList ();
 	~SinglyLinkedList ();
 	void insertion (int);
+	void swapPairs (node*);
 	void display ();
 
 };
@@ -68,6 +69,22 @@ void SinglyLinkedList::insertion (int value) {
 }
 
 
+void swapData (int *a, int *b) {
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+
+void SinglyLinkedList:: swapPairs (node* head) {
+	if (head != NULL && head->next != NULL) {
+		swapData (&head->data, &head->next->data);
+		swapPairs (head->next->next);
+	}
+}
+
+
 void SinglyLinkedList::display () {
 	node* temp = head;
 
@@ -94,6 +111,13 @@ int main () {
 	sll.insertion (1);
 	sll.insertion (2);
 	sll.insertion (3);
+	sll.insertion (4);
+	sll.insertion (5);
+	sll.insertion (6);
+
+	sll.display ();
+	cout << '\n';
+	sll.swapPairs (sll.head);
 	sll.display ();
 	getch ();
 	return 0;
