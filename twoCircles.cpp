@@ -23,7 +23,6 @@ void circleInCircle() {
 }
 
 int main(){
-
     initwindow(800,600);
     circleInCircle();
     getch();
