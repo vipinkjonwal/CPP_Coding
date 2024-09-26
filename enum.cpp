@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
-
+//enum (enumeration) is a userdefined datatype used to create integral constant in C++.
 enum Company{
 	Google = 1, Facebook, Twitter, Snapdeal, Microsoft					//Google is initialized with value 1. First value, unless stated, takes value as 0.
 };
